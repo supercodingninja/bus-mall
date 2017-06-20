@@ -37,7 +37,7 @@ Backstory:     1. Employed by BusMall (startup)     2. Product is similar to    
         i. The marketing research team
         ii. The developer
         iii. The focus group participant (who will be using the application)
-    2. Take about 30-45 minutes to work on the user stories (A wise student would)
+    2. **Take about 30-45 minutes to work on the user stories (A wise student would)**
     3. Draft a technical plan for the project:
       a. A detailed to-do list of things to make, step by step and tested at each stage, before getting into the code
       b. That time spent in thought and planning will make the code flow a lot faster
@@ -55,10 +55,10 @@ Backstory:     1. Employed by BusMall (startup)     2. Product is similar to    
       d. HTML files
       e. Plus a img/ directory.
     3. Retrieve the assets from the assets/ directory in the week-03 directory of our class repo and place them in your image directory.
-   *4. Write your user stories as described above and place them in a file called user-stories.md in your repo. Utilize good Markdown style to make this document look nice.*
+    4. **Write your user stories as described above and place them in a file called user-stories.md in your repo. Utilize good Markdown style to make this document look nice.**
     5. The thing you want to build today will select three random photos from the image directory and display them side-by-side-by-side in the browser window.
     6. In addition, you'll want to be able to receive clicks on those displayed images, and track those clicks for each image. You'll also want to track how many times each image is displayed, for statistical purposes.
     7. Upon receiving a click, three new non-duplicating random images need to be automatically displayed. In other words, the three images that are displayed should contain no duplicates, nor should they duplicate with any images that we displayed immediately before.
     8. To do this, you'll want a constructor function that creates an object associated with each image, and has (at a minimum) properties for the name of the image (to be used for display purposes), its file path, the number of times it has been shown, and the number of times it has been clicked. You'll probably find it useful to create a property that contains a text string you can use as an ID in HTML.
     9. After 25 selections have been made, turn off the event listeners on the images (to prevent additional voting) and also display a list of the products with votes received with each list item looking like "3 votes for the Banana Slicer".
-**10. Remember to submit a link to your most recent PR following the instructions in Canvas.**
+   10. **Remember to submit a link to your most recent PR following the instructions in Canvas.**
