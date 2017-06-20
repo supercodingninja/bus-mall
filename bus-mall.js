@@ -22,7 +22,6 @@ function render([A, B, C];) {
   for(var i = 0; i < allStores.length; i++) {
     threeOptions[i].render(3);
   }
-};
 
 new Option('', '', '');
 new Option('', '', '');
@@ -49,6 +48,8 @@ new Option('', '', '');
 new Option('', '', '');
 new Option('', '', '');
 new Option('', '', '');
+
+};
 
 function getRandomItem() {
   var rand = Math.floor(Math.random() * items.length);
