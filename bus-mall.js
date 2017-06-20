@@ -18,6 +18,12 @@ function C() {
 
 var items = [A, B, C];
 
+function render([A, B, C];) {
+  for(var i = 0; i < allStores.length; i++) {
+    threeOptions[i].render(3);
+  }
+};
+
 new Option('', '', '');
 new Option('', '', '');
 new Option('', '', '');
