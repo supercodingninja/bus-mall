@@ -18,6 +18,32 @@ function C() {
 
 var items = [A, B, C];
 
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+new Option('', '', '');
+
 function getRandomItem() {
   var rand = Math.floor(Math.random() * items.length);
   return new items[rand]();
