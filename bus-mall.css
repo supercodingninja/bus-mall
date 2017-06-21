@@ -3,4 +3,33 @@
   font-family: cursive;
   text-align: center;
   background-color: blue;
+
+#A {
+  border-color: red;
 }
+
+#B {
+  border-color: yellow;
+}
+
+#C {
+  border-color: green;
+}
+
+#Skip {
+  border-color:: grey;
+  h2 {
+    outline: 2px dashed yellow;
+    margin: 25px:
+  }
+
+#Results {
+  border-color: Purple;
+  h2 {
+    outline: 2px dashed yellow;
+    margin: 25px:
+  }
+
+  section {
+    outline: 1px solid black
+  }

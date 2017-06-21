@@ -62,3 +62,54 @@ Backstory:     1. Employed by BusMall (startup)     2. Product is similar to    
     8. To do this, you'll want a constructor function that creates an object associated with each image, and has (at a minimum) properties for the name of the image (to be used for display purposes), its file path, the number of times it has been shown, and the number of times it has been clicked. You'll probably find it useful to create a property that contains a text string you can use as an ID in HTML.
     9. After 25 selections have been made, turn off the event listeners on the images (to prevent additional voting) and also display a list of the products with votes received with each list item looking like "3 votes for the Banana Slicer".
    10. **Remember to submit a link to your most recent PR following the instructions in Canvas.**
+
+   *Learned a lot by Code and Peer Review, in Code Fellows Code 201: Day 1 (DAY 12)*
+   Based on peer code review, I also needed:
+
+   var totalClicks = 0
+   var option = []
+   var newOption
+
+   I was right about my original thought: new Option('', '', '').  I was also correct with my original thought of utilizing a for loop.  I forgot to put a function for my totalCalculations.  When calculating conversions, make sure you do not allow it to divide by 0: Infinity.
+
+   You can pass an array in a value; and check an array.  Austin did a great job by this: he had an checkQ(value, value); where he made it check for an value in array, by True of False.  You can also do this by a built in function in JS by numbers.indexOf(index value); ex. numbers.indexOf(7);
+
+   I should have also use something like what Austin used prodLast = prodNew to reassign pictures.
+
+   **The 2 hardest things about programming**
+   1. Naming
+   2. Cache
+
+
+   Probably wouldn't do:
+
+   <!-- for loop
+     if
+       while
+         if
+           while
+             else -->
+
+   I want to have the following variables (unsure if I want this many Global Variables: because there are already a lot of Global Variables built in; and when working with people, there may be a whole lot of teams with JS, and naming conflicts can emerge.):
+   1. clickTotal
+   2. option
+   3. lastOption
+   4. newOption
+   5. Options
+   6. getOption
+   7. render
+   8. clickEvent (for the event listener)
+
+   **Library: ChartJS**
+   - use this for Canvas.
+     *Libraries*
+     - a bunch of code someone wrote; and made available.
+     - use them to enhance the functionality of an app.
+
+     *Frameworks*
+     - a bunch of code someone wrote; and made available.
+     - we take our content; and out it in the frameworks structure.
+
+     *EXAMPLES OF LIBRARIES*
+     - ChartJS
+     - JQuery
