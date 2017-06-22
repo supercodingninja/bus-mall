@@ -1,47 +1,33 @@
 'use strict';
 
-var imageArray = [];
+// KEEP THIS
+// var Object = {
+//   name: 'bag',
+//   filepath: 'img/bag.jpg',
+//   clicked: 0,
+//   shown: 0
+// };
 
-// Container //
+var imageArray = [];
+  //container
 var ulEl = document.getElementById('images');
 
-// Object Constructor //
+//object constructor
 function Image(name, filepath) {
-
-  // Properties //
-  // property.value //
-  this.name = name;
+  /*properties*/
+  this.name = name; //value
   this.filepath = filepath;
   this.clicked = 0;
   this.givenImage = 0;
   imageArray.push(this);
 }
 
-// Object Instances //
-var bag = new Image('bag', 'img/bag.jpg');
-var banana = new Image('banana', 'img/banana.jpg');
-var bathroom = new Image('bathroom', 'img/bathroom.jpg');
-var boots = new Image('boots', 'img/boots.jpg');
-var breakfast1 = new Image('breakfast-1', 'img/breakfast-1.jpg');
-var breakfast = new Image('breakfast', 'img/breakfast.jpg');
-var bubblegum = new Image('bubblegum', 'img/bubblegum.jpg');
-var chair = new Image('chair', 'img/chair.jpg');
-var cthulhu = new Image('cthulhu', 'img/cthulhu.jpg');
-var dogDuck = new Image('dog-duck', 'img/dog-duck.jpg');
-var dragon = new Image('dragon', 'img/dragon.jpg');
-var pen = new Image('pen', 'img/pen.jpg');
-var petSweep = new Image('pet-sweep', 'img/pet-sweep.jpg');
-var scissors = new Image('scissors', 'img/scissors.jpg');
-var shark = new Image('shark', 'img/shark.jpg');
-var sweep = new Image('sweep', 'img/sweep.png');
-var tauntaun = new Image('tauntaun', 'img/tauntaun.jpg');
-var unicorn = new Image('unicorn', 'img/unicorn.jpg');
-var usb = new Image('usb', 'img/usb.gif');
-var waterCan = new Image('water-can', 'img/water-can.jpg');
-var wineGlass = new Image('wine-glass', 'img/wine-glass.jpg');
+//object instances
+var bag = new Image('bag', 'img/bag.jpg'); //do this for the rest
 
-// WORK ON PROBLEMS //
-// Problem 1: work on display images // // This is where you append to HTML //
+//WORK ON PROBLEMS
+
+//Problem 1: work on display images //this is where you append to HTML
 function renderImage() {
   //create for loop i < 3
   var liEl = document.createElement('li');
