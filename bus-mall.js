@@ -44,27 +44,25 @@ var wineGlass = new Image('wine-glass', 'img/wine-glass.jpg');
 // Problem 1: work on display images // // This is where you append to HTML //
 function renderImage() {
   //create for loop i < 3
+  for (var i = 0; i < 3; i++) {
+    function getRandomImages() {
+      var rand = Math.floor(Math.random() * allImages.length);
+      return new image[rand](); {
+      // console.log(i);
+      allImages[i].clicked += 1;
+    }
+  }
   var liEl = document.createElement('li');
   var imgEl = document.createElement('img');
   imgEl.src = 'some string';
-  //first, append img to li
-  //then, append li to ul
+  imgEl.appendChild(liEl);
+  liEl.appendChild(ulEl);
 
-  //markup from js.what I am appending
-} //this function renders 3 images
-//somewhere you are going to call this function
-
-function getRandomOptions() {
-  var rand = Math.floor(Math.random() * allOptions.length);
-  return new option[rand]();
-}
+  }
+  //somewhere you are going to call this function
 
 //GO ON FROM HERE
 //DON'T FORGET TO INCLUDE LOCAL STORAGE ASSIGNMENT FROM DAY 13
-
-
-
-
 
 // var userChoice = function renderOption() {
 //
