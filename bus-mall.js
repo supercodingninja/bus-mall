@@ -58,7 +58,7 @@ function renderImage() {
   imgEl.appendChild(liEl);
   liEl.appendChild(ulEl);
 
-  }
+}
   //somewhere you are going to call this function
 
 //GO ON FROM HERE

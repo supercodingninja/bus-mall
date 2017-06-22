@@ -1,106 +1,41 @@
 <!DOCTYPE html>
-  <html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bus Mall</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <hr class="box"></hr><hr class="line"></hr>
+      <h1>Bus Mall</h1>
+      <hr class="line"></hr><hr class="box"></hr>
+    </header>
+    <main>
+      <!-- It would be AWESOME to have a VIDEO .gif of the Sound Transit (or such like) as the background, continuing by loop. -->
+      <!-- It would be AWESOME to accompany the tet of these labels with audio: both, for those whom may have difficulty reading the text (regardless of the reasoning: just want to make them feel comfortable, and enjoy this experience: potential returning research participant; and of course, the AWESOME effect(s). -->
+        <p>
+          Greetings!  Thank you for participating in our exciting development, in your area!  We hope to use the many results of this study, to Empower YOU, in YOUR shopping EXPERIENCE!  Remember, this is shopping For You, by You!  We hope you, and the many others in your surrounding community, enjoy this friendly selection process: we truly, Value Your Input.
+        </p>
 
-    <head>
+        <br>
 
-      <meta charset="utf-8">
+        <p>
+          We made the selection process, quick ; and easy!  Whichever product you First feel most incline to purchase; then, that is your option (and we even placed a "Skip" option for you, in case you do not like either of the selections: note you may need to type your reasoning for skipping a selection: get what you want, right).  Thank you; and Enjoy!
+        </p>
+        <h2>Which Product Would You Like to Buy?</h2>
+        <section id="select"></section>
 
-      <meta name="viewport" content="width=device-width">
+        <ul id="results"></ul>
 
-      <title>Bus-Mall Research Study</title>
+        <div>
+        <canvas id="myChart"></canvas>
+      </div>
+      </main>
 
-      <link href="bus-mall.css" rel="stylesheet" type="text/css" />
+    <script src="app.js"></script>
 
-    </head>
+  </body>
 
-    <body>
-
-      <h1>What Would You Buy?</h1>
-
-      <!-- <button id="Begin">Let's Begin</button> -->
-
-      <!-- <form id="Study"> -->
-
-        <!-- <fieldset> -->
-
-          <!-- <legend> -->
-
-            <!-- It would be AWESOME to have a VIDEO .gif of the Sound Transit (or such like) as the background, continuing by loop. -->
-            <!-- It would be AWESOME to accompany the tet of these labels with audio: both, for those whom may have difficulty reading the text (regardless of the reasoning: just want to make them feel comfortable, and enjoy this experience: potential returning research participant; and of course, the AWESOME effect(s). -->
-            <p for="Greetings">Greetings!  Thank you for participating in our exciting development, in your area!  We hope to use the many results of this study, to Empower YOU, in YOUR shopping EXPERIENCE!  Remember, this is shopping For You, by You!  We hope you, and the many others in your surrounding community, enjoy this friendly selection process: we truly, Value Your Input.</p>
-
-            <br>
-            <br>
-
-            <p for="Instructions">We made the selection process, quick ; and easy!  Whichever product you First feel most incline to purchase; then, that is your option (and we even placed a "Skip" option for you, in case you do not like either of the selections: note you may need to type your reasoning for skipping a selection: get what you want, right).  Thank you; and Enjoy!</p>
-
-          <!-- </legend> -->
-
-        <!-- </fieldset> -->
-
-      <!-- </form id="Study"> -->
-<br>
-
-      <ul id="images">
-        <!-- <h2 class id=A /><img src="" /><img src="" /><img src="" /></h2> -->
-      <ul>
-
-      <section>
-        <!-- <h2 class id=B /><img src="" /><img src="" /><img src="" /><h2> -->
-      <section>
-
-      <section>
-        <!-- <class id=C /><img src="" /><img src="" /><img src="" /></h2> -->
-      <section>
-
-      <!-- <button id="Skip">Skip</button> -->
-
-      <br>
-
-      <!-- I need to use JS and hide this until the 25th "click," using only 20 "options" to choose from (some will repeat- but make sure all options (values) are used at least once). -->
-      <!-- <button id="Results">Results</button> DOING IN JS-->
-
-    </body>
-
-    <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
-<!-- <script> ALREADY IN JS FILE-->
-// var ctx = document.getElementById("myChart").getContext('2d');
-// var myChart = new Chart(ctx, {
-//     type: 'bar',
-//     data: {
-//         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-//         datasets: [{
-//             label: '# of Votes',
-//             data: [12, 19, 3, 5, 2, 3],
-//             backgroundColor: [
-//                 'rgba(255, 99, 132, 0.2)',
-//                 'rgba(54, 162, 235, 0.2)',
-//                 'rgba(255, 206, 86, 0.2)',
-//                 'rgba(75, 192, 192, 0.2)',
-//                 'rgba(153, 102, 255, 0.2)',
-//                 'rgba(255, 159, 64, 0.2)'
-//             ],
-//             borderColor: [
-//                 'rgba(255,99,132,1)',
-//                 'rgba(54, 162, 235, 1)',
-//                 'rgba(255, 206, 86, 1)',
-//                 'rgba(75, 192, 192, 1)',
-//                 'rgba(153, 102, 255, 1)',
-//                 'rgba(255, 159, 64, 1)'
-//             ],
-//             borderWidth: 1
-//         }]
-//     },
-//     options: {
-//         scales: {
-//             yAxes: [{
-//                 ticks: {
-//                     beginAtZero:true
-//                 }
-//             }]
-//         }
-//     }
-// });
-<!-- </script> -->
-
-  </html>
+</html>
