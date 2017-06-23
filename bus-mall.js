@@ -24,6 +24,7 @@ function Image(name, filePath) {
   this.clicked = 0;
   this.givenImage = 0;
   imageArray.push(this);
+  catalogImageNameArray.push(this.name);
 }
 
 // Object Instances //
