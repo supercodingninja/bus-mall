@@ -1,9 +1,15 @@
 'use strict';
 
 var imageArray = [];
-var newRenderImage;
-var oldRenderImage;
-var webImage = document.getElementById('immages');
+var leftRandomImage;
+var centerRandomImage;
+var rightRandomImage;
+var lastIndex = [];
+
+var webImage = document.getElementById('images');
+var leftImage = document.getElementById('left');
+var centerImage = document.getElementById('center');
+var rightImage = document.getElementById('right');
 
 // Container //
 // var ulEl = document.getElementById('images'); //
@@ -25,7 +31,6 @@ var bag = new Image('bag', 'img/bag.jpg');
 var banana = new Image('banana', 'img/banana.jpg');
 var bathroom = new Image('bathroom', 'img/bathroom.jpg');
 var boots = new Image('boots', 'img/boots.jpg');
-var breakfast1 = new Image('breakfast-1', 'img/breakfast-1.jpg');
 var breakfast = new Image('breakfast', 'img/breakfast.jpg');
 var bubblegum = new Image('bubblegum', 'img/bubblegum.jpg');
 var chair = new Image('chair', 'img/chair.jpg');
@@ -49,24 +54,28 @@ var wineGlass = new Image('wine-glass', 'img/wine-glass.jpg');
 //   for (var i = 0; i < 3; i++) {
 //     function getRandomImages() {
 //       var rand = Math.floor(Math.random() * imageArray.length);
-//       return new image[rand](); {
-//       // console.log(i);
 //       allImages[i].clicked += 1;
+//       return new image[rand]();
+//       // console.log(i);
 //     }
 //   }
-//   var liEl = document.createElement('li');
-//   var imgEl = document.createElement('img');
-//   imgEl.src = 'some string';
-//   imgEl.appendChild(liEl);
-//   liEl.appendChild(ulEl);
 // }
-// somewhere I need to call this function
+    // var liEl = document.createElement('li');
+    // var imgEl = document.createElement('img');
+    // imgEl.src = 'some string';
+    // imgEl.appendChild(liEl);
+    // liEl.appendChild(ulEl);
+// }
+// somewhere I need to call this function //
 
 // Ref. Chaitanya Narukulla [PERMITTED] //
 // https://github.com/chaitanyanarukulla/Busmall/blob/master/main.js //
 // function for random images. //
 function randomImage() {
-  newRenderImage = [];
+  leftRandomImage;
+  centerRandomImage;
+  rightRandomImage;
+  oldRenderImage = [leftRandomImage, centerRandomImage, rightRandomImage];
   while (newRenderImage.length < 3) {
     var randomImage = Math.floor(Math.random() * imageArray.length);
     if (!newRenderImage.includes(imageArray[randomImage]) && !oldRenderImage.includes(imageArray[randomImage])) {
@@ -118,7 +127,7 @@ function handleClick(event) {
   } else {
     newImage();
     randomImage();
-    render();
+    renderImage();
   }
 }
 
@@ -131,11 +140,11 @@ function libraryChart() {
   }
 }
 
-var ctx = document.getElementById("libraryChart").getContext('2d');
+var ctx = document.getElementById('libraryChart').getContext('2d');
 var libraryChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [{
       label: '# of Votes',
       data: [12, 19, 3, 5, 2, 3],
