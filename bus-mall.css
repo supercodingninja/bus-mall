@@ -1,23 +1,23 @@
-/** {
+* {
   color: white;
   font-family: cursive;
   text-align: center;
   background-color: blue;
 }
 
-#A {
+#left:hover {
   border-color: red;
 }
 
-#B {
+#center:hover {
   border-color: yellow;
 }
 
-#C {
+#right:hover {
   border-color: green;
 }
 
-#Skip {
+#Skip:hover {
   border-color:: grey;
   h2 {
     outline: 2px dashed yellow;
@@ -30,7 +30,3 @@
     outline: 2px dashed yellow;
     margin: 25px:
   }
-
-  section {
-    outline: 1px solid black
-  }*/
