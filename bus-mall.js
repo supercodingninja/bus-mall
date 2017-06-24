@@ -1,21 +1,9 @@
 'use strict';
 
-var imageArray = [];
-var leftRandomImage;
-var centerRandomImage;
-var rightRandomImage;
-var lastIndex = [];
-
-var webImage = document.getElementById('images');
-var leftImage = document.getElementById('left');
-var centerImage = document.getElementById('center');
-var rightImage = document.getElementById('right');
-
-// Container //
-// var ulEl = document.getElementById('images'); //
+var allImages = [];
 
 // Object Constructor //
-function Image(name, filePath) {
+function Images(name, filePath) {
 
   // Properties //
   // property.value //
@@ -23,8 +11,8 @@ function Image(name, filePath) {
   this.filePath = filePath;
   this.clicked = 0;
   this.givenImage = 0;
-  imageArray.push(this);
-  catalogImageNameArray.push(this.name);
+  allImages.push(this);
+  catalogallImages.push(this.name);
 }
 
 // Object Instances //
@@ -49,50 +37,22 @@ var usb = new Image('usb', 'img/usb.gif');
 var waterCan = new Image('water-can', 'img/water-can.jpg');
 var wineGlass = new Image('wine-glass', 'img/wine-glass.jpg');
 
-// WORK ON PROBLEMS //
-// Problem 1: work on display images // // This is where I append to HTML //
-// function renderImage() {
-//   for (var i = 0; i < 3; i++) {
-//     function getRandomImages() {
-//       var rand = Math.floor(Math.random() * imageArray.length);
-//       allImages[i].clicked += 1;
-//       return new image[rand]();
-//       // console.log(i);
-//     }
-//   }
-// }
-    // var liEl = document.createElement('li');
-    // var imgEl = document.createElement('img');
-    // imgEl.src = 'some string';
-    // imgEl.appendChild(liEl);
-    // liEl.appendChild(ulEl);
-// }
-// somewhere I need to call this function //
-
-// Ref. Chaitanya Narukulla [PERMITTED] //
-// https://github.com/chaitanyanarukulla/Busmall/blob/master/main.js //
-// function for random images. //
-function randomImage() {
-  leftRandomImage;
-  centerRandomImage;
-  rightRandomImage;
-  oldRenderImage = [leftRandomImage, centerRandomImage, rightRandomImage];
-  while (newRenderImage.length < 3) {
-    var randomImage = Math.floor(Math.random() * imageArray.length);
-    if (!newRenderImage.includes(imageArray[randomImage]) && !oldRenderImage.includes(imageArray[randomImage])) {
-      newRenderImage.push(imageArray[randomImage]);
-    }
+function renderallImages() {
+  while (allImages.length < 3) {
+    var select = Math.floor(Math.random() * (images.length));
+    allImages.push(images[select]);
   }
-  oldRenderImage = newRenderImage;
+    const randomImage = randomizedImages.pop();
+    imgEl.setAttribute("src", randomImage.filePath);
 }
 
 // A better way to calculate conversion rate //
 function calcConversion() {
-  for (var i = 0; i < imageArray.length; i++) {
-    if (imageArray[i].givenImage === 0) {
-      imageArray[i].conversion = 'images';
+  for (var i = 0; i < allImages.length; i++) {
+    if (allImages[i].givenImage === 0) {
+      allImages[i].conversion = 'images';
     } else {
-      imageArray[i].conversion = imageArray[i].clicked / imageArray[i].givenImage;
+      allImages[i].conversion = allImages[i].clicked / allImages[i].givenImage;
     }
   }
 }
@@ -135,9 +95,9 @@ function handleClick(event) {
 function libraryChart() {
   var chartHeaders = [];
   var chartInfo = [];
-  for (var i = 0; i < imageArray.length; i++){
-    chartInfo.push(imageArray[i].clicked);
-    chartHeaders.push(imageArray[i].name);
+  for (var i = 0; i < allImages.length; i++){
+    chartInfo.push(allImages[i].clicked);
+    chartHeaders.push(allImages[i].name);
   }
 }
 
