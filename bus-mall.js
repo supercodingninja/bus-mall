@@ -90,6 +90,9 @@ function handleClick(event) {
     randomImage();
     renderImage();
   }
+  if (localStorage) {
+    pullOrder;
+  }
 }
 
 function libraryChart() {
